@@ -55,6 +55,9 @@ summary {
 .menu-center {
       display:inline-block;
 }
+.active-link {
+  color: #ffffff;
+}
 
 /**
    * 1. Correct `inline-block` display not defined in IE 8/9.
@@ -99,8 +102,12 @@ a {
    */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0; 
+}
 
+.active{
+  color: #ffffff;
+}
 /* Text-level semantics
      ========================================================================== */
 /**

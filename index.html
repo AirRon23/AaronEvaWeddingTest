@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="./foundation-6.2.1-complete/css/foundation.css">
 </head>
 <body>
- 
+
 
 <div class="row column text-center">
 <h1>Aaron and Eva</h1>
@@ -15,22 +15,31 @@
 <!--<h2 class="subheader">Such a Simple Blog Layout</h2>-->
 </div>
  
- <div class="top-bar">
-<!--<div class="top-bar-left"> -->
-<ul class="menu-center menu">
-<li><a href="#our-story">Our Story</a></li>
-<li><a href="#timeline">Timeline</a></li>
-<li><a href="#details">Details</a></li>
-<li><a href="#registry">Registry</a></li>
-<li><a href="http://aaronandeva.rsvpify.com">RSVP</a></li>
-</ul>
-<!--</div>-->
-</div>
  
+<div data-sticky-container>
+  <div class="sticky" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="navbar-anchor" data-btm-anchor="navbar-anchor:bottom">
+    <nav data-magellan>
+      <div style="background-color:#bbbbbb" id="main-menu">
+      	<ul class="horizontal menu" style="display: table; margin: 0 auto;">
+      	<li><a href="#our-story">Our story</a></li>
+      	<li><a href="#timeline">Timeline</a></li>
+      	<li><a href="#details">Details</a></li>
+      	<li><a href="#registry">Registry</a></li>
+	  	<li><a href="http://aaronandeva.rsvpify.com">RSVP</a></li>
+      	</ul>
+  	  </div>
+    </nav>
+  </div>
+</div>
+
+ 
+<div id="navbar-anchor">
+<br>
+
 
 <div class="row medium-8 large-7 columns">
 	<!--Individual page segment -->
-	<div class="blog-post" id="our-story">
+	<div class="blog-post" id="our-story" data-magellan-target="our-story">
 		<h3 class="text-center">Our Story</h3>
 		<img class="float-center thumbnail" src="http://placehold.it/850x350">
 		<p class="text-center">Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
@@ -41,7 +50,7 @@
 		</div>
 	</div>
 	<!--Individual page segment -->
-	<div class="blog-post" id="timeline">
+	<div class="blog-post" id="timeline" data-magellan-target="timeline">
 		<h3 class="text-center">Timeline</h3>
 		<img class="float-center thumbnail" src="http://placehold.it/850x350">
 		<p class="text-center">Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
@@ -52,7 +61,7 @@
 		</div>
 	</div>
 	<!--Individual page segment -->
-	<div class="blog-post" id="details">
+	<div class="blog-post" id="details" data-magellan-target="details">
 		<h3 class="text-center">Details</h3>
 		<img class="float-center thumbnail" src="http://placehold.it/850x350">
 		<p class="text-center">Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
@@ -63,7 +72,7 @@
 		</div>
 	</div>
 	<!--Individual page segment -->
-	<div class="blog-post" id="registry">
+	<div class="blog-post" id="registry" data-magellan-target="registry">
 		<h3 class="text-center">Registry</h3>
 		<p class="text-center">Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
 		<div class="row">
@@ -72,6 +81,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
